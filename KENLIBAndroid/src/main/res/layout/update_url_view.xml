@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/hs"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/hs"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="参数修改"
+            android:textColor="@color/white"
+            android:textSize="18dp">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tm_black"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:paddingBottom="20dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IP："
+            android:textColor="@color/white"
+            android:textSize="18dp">
+
+        </TextView>
+        <com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText
+            android:id="@+id/et_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入IP"
+            android:text=""
+            app:met_clearButton="true"
+            android:background="@color/white"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="显示列数："
+            android:textColor="@color/white"
+            android:textSize="18dp"/>
+        <com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText
+            android:id="@+id/ls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="显示列数"
+            android:text="3"
+            app:met_clearButton="true"
+            android:background="@color/white"
+            />
+
+
+        <Button
+            android:id="@+id/btn_url"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:text="OK"
+            android:textColor="@color/white"></Button>
+    </LinearLayout>
+</LinearLayout>

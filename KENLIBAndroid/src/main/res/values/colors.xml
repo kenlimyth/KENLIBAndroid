@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#299EE3</color>
+    <color name="colorPrimaryDark">#299EE3</color>
+    <color name="colorAccent">#299EE3</color>
+
+    <color name="cover_adjust_position_activity_mask_color">#000000</color>
+    <color name="cover_adjust_position_finished_text_color">#ffffff</color>
+    <color name="cover_adjust_position_background">#333333</color>
+    <color name="bg_color">#EDEDED</color>
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="help_button_view">#ffcccccc</color>
+    <color name="help_view">#ff404040</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_image_border">#ffffffff</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c000ff00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="sbc_header_text">#ff808080</color>
+    <color name="sbc_header_view">#ffffffff</color>
+    <color name="sbc_list_item">#fffff0e0</color>
+    <color name="sbc_layout_view">#ffffffff</color>
+    <color name="sbc_page_number_text">#ff000000</color>
+    <color name="sbc_snippet_text">#ff4b4b4b</color>
+    <color name="share_text">#ff000000</color>
+    <color name="share_view">#ffffffff</color>
+    <color name="status_view">#50000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="header">#58567D</color>
+    <color name="grgray">#686868</color>
+    <color name="bg">#f0f0f0</color>
+    <color name="bg1">#ccc</color>
+    <color name="bg11">#e6e6e6</color>
+
+    <color name="yellow">#FFFF00</color>
+
+    <color name="l1">#39a6e7</color>
+    <color name="l2">#4680d1</color>
+    <color name="lan1">#FF03DAC5</color>
+    <color name="l">#4680d1</color>
+    <color name="ls">#3478F7</color>
+
+    <color name="h1">#f8f8f8</color>
+    <color name="h2">#e9e9e9</color>
+    <color name="h3">#d9d9d9</color>
+    <color name="hs">#000000</color>
+    <color name="black">#000000</color>
+    <color name="red1">#da4643</color>
+    <color name="red2">#DF8B8B</color>
+    <color name="red3">#FF5858</color>
+
+    <color name="ls1">#6587E1</color>
+    <color name="qs">#40D488</color>
+
+    <color name="b">#ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#999</color>
+    <color name="blue">#3F51B5</color>
+
+
+    <color name="lan">#486BFF</color>
+    <color name="hong">#ffff0000</color>
+
+    <color name="huise">#f4f4f4</color>
+    <color name="hui">#f4f4f4</color>
+    <color name="hui1">#999</color>
+
+    <color name="item_main_pressed">#2986F7</color>
+    <color name="item_main_normal">#5B5B5B</color>
+
+    <color name="bg_brown">#35353a</color>
+
+    <color name="dialog_top_small_bar_color">#E5E3E1</color>
+    <color name="bookshelf_description_bookTitle_color">#3E3025</color>
+    <color name="bookshelf_description_bookAuthorLabel_color">#9B908A</color>
+
+    <color name="app_color_theme_1">#EF5362</color> <!-- Grapefruit -->
+    <color name="app_color_theme_2">#FE6D4B</color> <!-- Bittersweet -->
+    <color name="app_color_theme_3">#FFCF47</color> <!-- Sunflower -->
+    <color name="app_color_theme_4">#9FD661</color> <!-- Grass -->
+    <color name="app_color_theme_5">#3FD0AD</color> <!-- Mint -->
+    <color name="app_color_theme_6">#2BBDF3</color> <!-- Aqua -->
+    <color name="app_color_theme_7">#5A9AEF</color> <!-- Blue Jeans -->
+    <color name="app_color_theme_8">#AC8FEF</color> <!-- Lavender -->
+    <color name="app_color_theme_9">#EE85C1</color> <!-- Pink Rose -->
+
+    <!--ARGB 透明色-->
+    <color name="tm_argb">#80EF5362</color>
+    <color name="tm">#ee212121</color>
+    <color name="tm_black">#80000000</color>
+    <color name="tm_100">#00000000</color>
+    <color name="tm_80">#33000000</color>
+
+</resources>

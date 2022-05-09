@@ -1,0 +1,153 @@
+apply plugin: 'com.android.library'
+apply from: "config.gradle"
+
+//JitPack使用
+//apply plugin: 'com.github.dcendents.android-maven'
+//group='com.gitee.kenlimyth'
+
+//apply plugin: 'kotlin-android'
+//apply plugin: 'kotlin-android-extensions'
+//如果使用上面kotlin plugin,需要在主项目build.gradle中加入如下kotlin依赖,否则注销上面的kotlin
+//dependencies {
+//    classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.21"
+//}
+
+android {
+    compileSdkVersion project.ext.compileSdkVersion
+    buildToolsVersion project.ext.buildToolsVersion
+    defaultConfig {
+        minSdkVersion project.ext.minSdkVersion
+        targetSdkVersion project.ext.targetSdkVersion
+        multiDexEnabled = true //越过64k限制
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    compileOptions {
+
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+
+    }
+
+    useLibrary 'org.apache.http.legacy'
+
+    buildFeatures {
+        viewBinding = true
+        dataBinding = true
+    }
+
+
+}
+
+repositories {
+    mavenCentral()
+}
+
+//重复导入了jar包，解决办法：
+configurations {
+    cleanedAnnotations
+    compile.exclude group: 'org.jetbrains', module: 'annotations'
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['**/*.jar', '*.jar'])
+
+    api 'androidx.appcompat:appcompat:1.1.0'
+    api 'androidx.legacy:legacy-support-v4:1.0.0'
+    api 'androidx.constraintlayout:constraintlayout:1.1.3'
+    api 'com.google.android.material:material:1.0.0'
+
+    //json
+    api 'com.google.code.gson:gson:2.7'
+    api 'com.alibaba:fastjson:1.2.32'
+
+    //Retrofit
+    api 'com.squareup.retrofit2:retrofit:' + project.ext.dependencies.retrofit2
+    api 'com.squareup.retrofit2:converter-gson:' + project.ext.dependencies.retrofit2
+    api 'com.squareup.retrofit2:adapter-rxjava2:' + project.ext.dependencies.retrofit2
+
+    //RXjava
+    api 'io.reactivex.rxjava2:rxjava:' + project.ext.dependencies.rxjava2
+    api 'io.reactivex.rxjava2:rxandroid:' + project.ext.dependencies.rxjava2
+
+    //okhttp
+    api 'com.squareup.okhttp3:okhttp:' + project.ext.dependencies.okhttp3
+    api 'com.squareup.okhttp3:logging-interceptor:' + project.ext.dependencies.okhttp3
+    api 'com.squareup.okio:okio:' + project.ext.dependencies.okio
+
+    api 'com.google.android:flexbox:0.3.2'
+
+    //图片缩放
+    //implementation 'com.bm.photoview:library:1.4.1'
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.21"
+    api 'com.github.chrisbanes:PhotoView:2.1.3'
+    api('com.github.bumptech.glide:glide:3.7.0')
+
+    //浏览器支持
+    api 'androidx.browser:browser:1.0.0'
+    api 'androidx.viewpager:viewpager:1.0.0'
+
+    //Banner 轮播图
+    api 'com.youth.banner:banner:1.4.9'
+
+    //Fresco 圆形头像
+    api 'com.facebook.fresco:fresco:1.11.0'
+
+    //jetpack
+    //LiveData,ViewModel
+    api "androidx.lifecycle:lifecycle-viewmodel:" + project.ext.dependencies.lifecycle
+    api "androidx.lifecycle:lifecycle-livedata:" + project.ext.dependencies.lifecycle
+    api "androidx.lifecycle:lifecycle-extensions:" + project.ext.dependencies.lifecycle
+    //room
+    api "androidx.room:room-runtime:" + project.ext.dependencies.room
+    annotationProcessor "androidx.room:room-compiler:" + project.ext.dependencies.room
+    api "androidx.room:room-rxjava2:" + project.ext.dependencies.room
+
+    //tbs
+    api 'com.tencent.tbs:tbssdk:44085'
+
+    //SmartRefreshLayout
+    api 'com.scwang.smart:refresh-layout-kernel:' + project.ext.dependencies.smartRefresh
+    //核心必须依赖
+    api 'com.scwang.smart:refresh-header-classics:' + project.ext.dependencies.smartRefresh
+    //经典刷新头
+    api 'com.scwang.smart:refresh-footer-classics:' + project.ext.dependencies.smartRefresh
+    //经典加载
+    api 'com.scwang.smart:refresh-header-radar:' + project.ext.dependencies.smartRefresh
+    //雷达刷新头
+    api 'com.scwang.smart:refresh-footer-ball:' + project.ext.dependencies.smartRefresh
+    //球脉冲加载
+    api 'com.scwang.smart:refresh-header-material:' + project.ext.dependencies.smartRefresh
+    //谷歌刷新头
+    //implementation  'com.scwang.smart:refresh-header-two-level:2.0.3'   //二级刷新头
+
+    //gif
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.3'
+
+    //占位控件
+    api 'me.samlss:broccoli:1.0.0'
+
+    //多重水波纹
+    api 'com.scwang.wave:MultiWaveHeader:1.0.0-andx'
+
+    //XUI
+    api 'com.github.xuexiangjys:XUI:1.1.8'
+
+    // LeakCanary内存泄漏检测
+    //debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.6'
+
+    //AndroidUtilCode
+    implementation 'com.blankj:utilcodex:1.31.0'
+
+    //zxingLibrary
+    api project(path: ':zxinglibrary')
+
+}
+

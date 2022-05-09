@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hs">
+
+
+    <TextView
+        android:textSize="20dp"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:text="货运APP架构搭建"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+    </TextView>
+
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:textSize="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:text="V1.0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+</RelativeLayout>

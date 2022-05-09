@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/m"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <EditText
+            android:id="@+id/wdid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_bottom"
+            android:enabled="false"
+            android:hint=""
+            android:padding="10dp"
+            android:visibility="gone" >
+
+            <requestFocus />
+        </EditText>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="11"
+                android:textColor="#000" />
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/ydh"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_bottom"
+            android:hint="请扫描运单号"
+            android:padding="10dp" 
+            android:inputType="number"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/smjg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="扫描列表"
+                android:textColor="#000" />
+        </FrameLayout>
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:divider="#CCC"
+            android:dividerHeight="1px" >
+        </ListView>
+
+        <Button
+            android:id="@+id/buttonUp"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_5"
+            android:text="完成"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+</LinearLayout>

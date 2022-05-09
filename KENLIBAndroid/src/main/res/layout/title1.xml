@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+   	android:background="#1dade2"
+   android:padding="5dp"
+  >
+
+    
+    <FrameLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginLeft="20dp"
+        >
+
+   
+
+    <TextView
+        android:id="@+id/appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="#fff"
+        android:textSize="20dp" 
+        android:layout_gravity="right|center_vertical"
+        
+        >
+    </TextView>
+  </FrameLayout>  
+     <ImageView
+        android:id="@+id/set"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/set" 
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="right"
+        >
+    </ImageView>
+    
+
+</FrameLayout>

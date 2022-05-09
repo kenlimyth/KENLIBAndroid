@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+            android:id="@+id/rl_book"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+        <ImageView
+                android:id="@+id/iv_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/downloading"
+                android:scaleType="fitEnd"/>
+        <ImageView
+                android:visibility="gone"
+                android:background="@drawable/bookselect_checked_border_background"
+                android:layout_centerInParent="true"
+                android:id="@+id/iv_check_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/iv_check"
+                android:scaleType="centerCrop"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                />
+        <TextView
+                android:id="@+id/tv_added"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#7F000000"
+                android:gravity="center"
+                android:text="added"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/rl_book"
+            android:layout_alignStart="@+id/rl_book"
+            android:layout_below="@+id/rl_book"
+            android:maxLines="3"
+            android:paddingBottom="16dp"
+            android:paddingTop="8dp"
+            android:textSize="12sp"
+            android:textColor="@color/bookshelf_description_bookTitle_color"
+            android:textStyle="bold"
+        android:layout_alignRight="@+id/rl_book"
+        android:layout_alignLeft="@+id/rl_book" />
+
+</RelativeLayout>

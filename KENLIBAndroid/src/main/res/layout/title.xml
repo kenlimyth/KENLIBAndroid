@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@drawable/border_bottom"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:paddingLeft="5dp" >
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:src="@drawable/bar_btn_icon_returntext_a" android:layout_gravity="center_vertical">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/goback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:text="返回"
+        android:textColor="@color/l"
+        android:textSize="20dp" android:layout_gravity="center_vertical">
+    </TextView>
+
+    <TextView
+        android:id="@+id/ptitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+          android:textColor="@color/hs"
+        android:textSize="20dp" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/l" android:text=""
+        android:textSize="20dp" >
+    </TextView>
+
+</FrameLayout>

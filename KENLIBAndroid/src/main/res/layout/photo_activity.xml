@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/hs"
+    android:orientation="vertical" >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        >
+        <ImageView
+            android:id="@+id/iv_menu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/menu"
+            android:layout_gravity="left|center"
+            android:layout_marginLeft="5dp"
+            ></ImageView>
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_height="wrap_content" android:text="相册整理">
+
+        </TextView>
+        <ImageView
+            android:id="@+id/ivUp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/up"></ImageView>
+    </FrameLayout>
+
+
+
+    <com.kenlib.sample.photo.view.PhotoXXKView
+        android:id="@+id/xxk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:gravity="bottom"  />
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/service"
+            android:icon="@mipmap/icon_service"
+
+            android:title="2个一行" />
+        <item
+            android:id="@+id/api"
+            android:icon="@mipmap/icon_api"
+            android:title="4个一行" />
+        <item
+            android:id="@+id/recommend"
+            android:icon="@mipmap/icon_recommend"
+            android:title="推荐APP给朋友" />
+        <item
+            android:id="@+id/business"
+            android:icon="@mipmap/icon_bussiness"
+            android:title="商务合作"
+            android:visible="false" />
+        <item
+            android:id="@+id/question"
+            android:icon="@mipmap/q_icon"
+            android:title="常见问题" />
+    </group>
+
+
+</menu>

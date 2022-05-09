@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/m"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title" />
+
+    <ScrollView
+        android:id="@+id/gd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <EditText
+                android:id="@+id/wdid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_bottom"
+                android:enabled="false"
+                android:hint=""
+                android:padding="10dp"
+                android:visibility="gone" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/wdname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_bottom"
+                android:hint="选择网点"
+                android:padding="10dp"
+                android:textSize="18dp" >
+            </TextView>
+
+            <EditText
+                android:id="@+id/tyr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_bottom"
+                android:hint="托运人"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/tyrdh"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_bottom"
+                android:hint="托运电话"
+                android:inputType="number"
+                android:padding="10dp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/shrdz"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_bottom"
+                android:hint="收货人地址"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/shrdh"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_bottom"
+                android:hint="收货人电话"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/shr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_bottom"
+                android:hint="收货人"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/sl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_bottom"
+                    android:digits="0123456789"
+                    android:hint="数量"
+                    android:inputType="number"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/zl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_bottom"
+                    android:digits="0123456789."
+                    android:hint="重量"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:text="" />
+
+                <EditText
+                    android:id="@+id/tj"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/border_bottom"
+                    android:digits="0123456789."
+                    android:hint="体积"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:text="" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/shlx"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/border_bottom" >
+
+                <TextView
+                    android:id="@+id/shlxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="送货"
+                    android:textSize="18dp" />
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_gravity="right"-->
+                    <!--android:src="@drawable/abc_spinner_ab_default_holo_light" />-->
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fklx"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/border_bottom"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/fklxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="请选择付款类型" />
+
+                <!--<ImageView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:layout_gravity="right"-->
+                    <!--android:src="@drawable/abc_spinner_ab_default_holo_light" />-->
+            </FrameLayout>
+
+            <EditText
+                android:id="@+id/zyf"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_bottom"
+                android:digits="0123456789."
+                android:hint="总运费"
+                android:inputType="number"
+                android:padding="10dp"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/dshk"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_bottom"
+                android:digits="0123456789."
+                android:hint="代收货款"
+                android:inputType="number"
+                android:padding="10dp"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/hw"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_bottom"
+                android:hint="货物"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/bz"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_bottom"
+                android:hint="备注"
+                android:padding="10dp" />
+
+            <Button
+                android:id="@+id/buttonUp"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_5"
+                android:text="确定"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,2 @@
+--安卓生成指纹 sha-1
+keytool -v -list -keystore D:\ING\BookWalker\GoogleDrive\MyApplication2\app\googledrive.jks

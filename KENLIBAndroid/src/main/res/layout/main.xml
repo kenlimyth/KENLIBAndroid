@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    style="@style/text"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg"
+    android:orientation="vertical" >
+
+      <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#1dade2"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:gravity="center"
+       >
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="好运货的"
+            android:textSize="25dp"
+            style="@style/title" 
+            android:layout_gravity="center"
+           />
+        
+         <TextView
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更多"
+            android:textSize="20dp"
+            style="@style/title" 
+            android:layout_gravity="right|center_vertical"
+           />
+    </FrameLayout>
+    
+    
+       <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+      
+      
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp" 
+        android:layout_marginTop="10dp"
+        style="@style/ys"
+        />
+
+     <TextView
+        android:id="@+id/gg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp" 
+        android:layout_marginTop="100dp"
+        android:textColor="#000"
+        android:gravity="center"
+        />
+    
+      <Button
+            android:id="@+id/btnzh"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_5"
+            android:gravity="center"
+            android:text="载货"
+            android:textColor="#fff"
+            android:textSize="20dp" 
+            android:layout_gravity="bottom|left"
+            />
+        <Button
+            android:id="@+id/btnkc"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/round_5"
+            android:gravity="center"
+            android:text="空车"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_gravity="bottom|right" />
+    </FrameLayout>
+
+</LinearLayout>

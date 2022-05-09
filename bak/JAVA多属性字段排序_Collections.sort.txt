@@ -1,0 +1,44 @@
+		
+List<ProductSalesActualData> productSalesActualDataList = null;
+
+//取得した対象が下記の項目によりソートとする
+		Collections.sort(productSalesActualDataList,new Comparator<ProductSalesActualData>() {
+			
+			@Override
+			public int compare(ProductSalesActualData obj1, ProductSalesActualData obj2) {
+		
+				//1番目：ターミナルIDの昇順
+				int a = obj1.getTerminalId().compareToIgnoreCase(obj2.getTerminalId());
+				if(a != 0) {
+					return a > 0 ? 1 : -1;
+				}
+				//2番目：PMA名の昇順
+//				a = obj1.getPmaName().compareToIgnoreCase(obj2.getPmaName());
+				a = (obj1.getPmaName() == null ? "" : obj1.getPmaName()).compareToIgnoreCase((obj2.getPmaName() == null ? "" : obj2.getPmaName()));
+				if(a != 0) {
+					return a > 0 ? 1 : -1;
+				}
+				//3番目：情報分類コードの昇順
+//				a = obj1.getInfoSeparation().compareToIgnoreCase(obj2.getInfoSeparation());
+				a = (obj1.getInfoSeparation() == null ? "" : obj1.getInfoSeparation()).compareToIgnoreCase((obj2.getInfoSeparation() == null ? "" : obj2.getInfoSeparation()));
+				if(a != 0) {
+					return a > 0 ? 1 : -1;
+				}
+				//4番目：販売合計（2週間）の降順
+				a = obj1.getSalesQuantity2Week() - obj2.getSalesQuantity2Week();
+				if(a != 0) {
+					return a > 0 ? -1 : 1;
+				}
+				//5番目：商品コードの昇順
+				a = obj1.getGoodsCd().compareToIgnoreCase(obj2.getGoodsCd());
+				if(a != 0) {
+					return a > 0 ? 1 : -1;
+				}
+				//6番目：Janコードの昇順
+				a = obj1.getJanCd().compareToIgnoreCase(obj2.getJanCd());
+				if(a != 0) {
+					return a > 0 ? 1 : -1;
+				}
+				return a > 0 ? 1 : -1;
+			}
+		});

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical">
+
+    <com.kenlib.view.imgsee.ImgSeeView
+        android:id="@+id/img_see"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/btnDel"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="删除"
+        android:src="@drawable/del"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="60dp"
+        android:textColor="@color/white"></ImageView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <com.xuexiang.xui.widget.edittext.materialedittext.MaterialEditText
+            android:id="@+id/tag"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:hint=""
+            android:text=""
+            app:met_clearButton="true"
+            android:background="@color/white"
+            />
+
+        <ImageView
+            android:id="@+id/btn_sub"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/tag"
+           ></ImageView>
+    </LinearLayout>
+
+</FrameLayout>

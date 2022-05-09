@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_bottom" 
+            android:scrollbars="none">
+
+            <FrameLayout
+                android:id="@+id/w"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dip"
+                    android:paddingTop="10dip" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="3dp" >
+
+                    <ImageView
+                        android:id="@+id/iv_bottom_line"
+                        android:layout_width="40dip"
+                        android:layout_height="2dip"
+                        android:layout_gravity="center"
+                        android:scaleType="matrix"
+                        android:src="@color/l" />
+                </LinearLayout>
+            </FrameLayout>
+        </HorizontalScrollView>
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="40dp"
+            android:layout_height="38dp"
+            android:layout_gravity="right|center_vertical"
+            android:background="#fff"
+            android:src="@drawable/search1" />
+    </FrameLayout>
+
+<!--    <androidx.core.view.ViewPager-->
+<!--        android:id="@+id/vPager"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_weight="1.0"-->
+<!--        android:flipInterval="30"-->
+<!--        android:persistentDrawingCache="animation" />-->
+
+</LinearLayout>

@@ -1,0 +1,225 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="WelcomeTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@color/hs</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="WelcomeTheme1" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@mipmap/welcome</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="text">
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="text1">
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="kd">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="l">
+        <item name="android:background">@drawable/border_bottom</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="b">
+        <item name="android:background">@drawable/border_bottom</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="ll">
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="imgSize">
+        <item name="android:width">40dp</item>
+        <item name="android:height">40dp</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/black</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 模糊 -->
+    </style>
+
+    <style name="btn">
+        <item name="android:background">@drawable/round_5</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:height">50dp</item>
+    </style>
+
+    <style name="title">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="ys">
+        <item name="android:textColor">#39a6e7</item>
+    </style>
+
+    <style name="Theme_Transparent" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+
+    </style>
+
+    <style name="custom_dialog" parent="@style/Theme.AppCompat.Light.Dialog">
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@drawable/round_5_white1</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 遮罩层 -->
+        <item name="android:backgroundDimAmount">0.8</item>
+    </style>
+
+
+    <style name="anim_menu_bottombar_kendll">
+        <item name="android:windowEnterAnimation">@anim/menu_bottombar_in_kendll</item>
+        <item name="android:windowExitAnimation">@anim/menu_bottombar_out_kendll</item>
+    </style>
+
+    <style name="main_tab_bottom">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">1dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/bottom_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/bottom_dialog_out</item>
+    </style>
+
+    <style name="ActionSheetDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+    </style>
+
+    <style name="dialogFull" parent="Animation.AppCompat.Dialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+    <style name="top_dialog_anim">
+        <item name="android:windowEnterAnimation">@anim/top_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/top_dialog_out</item>
+    </style>
+    <style name="bottom_dialog_anim" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/bottom_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/bottom_dialog_out</item>
+    </style>
+
+
+    <style name="Theme.ToolBar.ZhiHu" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="overlapAnchor">false</item> <!--是为了将menu放到三个点的下面-->
+        <item name="android:textColorPrimary">@android:color/white
+        </item> <!--三个点的颜色，如果下面不设置子标题颜色那么子标题字体颜色就会是三个点的颜色-->
+        <item name="android:textColorSecondary">@android:color/black</item> <!--子标题字体颜色-->
+        <item name="android:textSize">18sp</item> <!--修改字体大小-->
+        <item name="android:textColor">@color/blue</item> <!--menu字体颜色-->
+        <item name="actionOverflowButtonStyle">@style/OverflowButtonStyle
+        </item> <!--设置toolbar自带的三个点-->
+        <item name="android:itemBackground">@color/white</item><!--修改item背景颜色-->
+    </style>
+    <!--设置toolbar自带的三个点-->
+    <style name="OverflowButtonStyle" parent="@android:style/Widget.ActionButton.Overflow">
+        <item name="android:src">@drawable/menu1</item>
+        <item name="android:width">@dimen/abc_action_button_min_width_overflow_material</item>
+        <item name="android:height">@dimen/abc_action_button_min_width_overflow_material</item>
+    </style>
+
+    <style name="CirclesCheckbox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:background">@drawable/selector_checkbox</item>
+        <item name="android:button">@null</item>
+    </style>
+
+
+    <!--SettingTheme-->
+    <style name="SettingTheme" parent="XUITheme.Phone">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--系统弹窗按钮样式-->
+        <item name="buttonStyle">@style/Button.AlertDialog</item>
+
+        <!--有Title-->
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+        <item name="actionBarStyle">@style/ActionBarStyle</item>
+    </style>
+
+    <style name="ActionBarStyle" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="titleTextStyle">@style/ToolbarTitle</item>
+        <item name="subtitleTextStyle">@style/ToolbarSubTitle</item>
+        <item name="background">?attr/colorPrimary</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    </style>
+
+    <style name="ToolbarTitle" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textSize">?attr/xui_actionbar_title_text_size</item>
+        <item name="android:textColor">@color/xui_config_color_white</item>
+    </style>
+
+    <style name="ToolbarSubTitle" parent="TextAppearance.AppCompat.Subhead">
+        <item name="android:textSize">?attr/xui_actionbar_sub_text_size</item>
+        <item name="android:textColor">@color/xui_config_color_white</item>
+    </style>
+</resources>

@@ -1,0 +1,20 @@
+project.ext {
+    compileSdkVersion = 29
+    buildToolsVersion = '29.0.2'
+    minSdkVersion = 23
+    targetSdkVersion = 29
+    versionCode = 1
+    versionName = "1.0"
+
+    //version
+    dependencies = [
+            retrofit2   : "2.3.0",
+            rxjava2     : "2.0.1",
+            okhttp3     : "3.8.0",
+            okio        : "1.13.0",
+            lifecycle   : "2.2.0",
+            room        : "2.3.0",
+            smartRefresh: "2.0.3"
+    ]
+}
+

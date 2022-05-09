@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PercentageRing">
+        <attr name="radius" format="integer"/>
+        <attr name="circleBackground" format="color"/>
+        <attr name="ringColor" format="color"/>
+        <attr name="textColor" format = "color"/>
+        
+    </declare-styleable>
+
+    <declare-styleable name="IconMunu">
+        <attr name="icon" />
+        <attr name="PressedColor" format = "color"/>
+        <attr name="NormalColor" format = "color"/>
+    </declare-styleable>
+</resources>
